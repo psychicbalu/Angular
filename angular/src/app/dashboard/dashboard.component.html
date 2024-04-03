@@ -18,7 +18,9 @@
           <li class="nav-item">
             <a class="nav-link" href="#">Contact</a>
           </li>
+          <li></li>
         </ul>
+        
       </div>
     </div>
   </nav>
@@ -27,6 +29,14 @@
     <div style="text-align: center;">
       <h1>Welcome User</h1>
       <p>This is your dashboard</p>
+      <div class="m-5 border rounded p-5 d-flex justify-content-between">
+        <input [(ngModel)] = hobbies type="text" placeholder="Enter your hobbies" class="form-control">
+        <button class="btn btn-primary">Submit</button>
+      </div>
+      <div>
+        <h4>hobbies are {{hobbies}}</h4>
+      </div>
     </div>
+   
   </div>
   

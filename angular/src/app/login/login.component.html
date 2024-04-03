@@ -1,25 +1,24 @@
 <div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
-    <div style="max-width: 80%; display: flex; justify-content: center;">
+  <div style="max-width: 80%; display: flex; justify-content: center;">
       <div style="flex: 1; text-align: center;">
-        <img src="https://media.istockphoto.com/id/1281150061/vector/register-account-submit-access-login-password-username-internet-online-website-concept.jpg?s=612x612&w=0&k=20&c=9HWSuA9IaU4o-CK6fALBS5eaO1ubnsM08EOYwgbwGBo=" alt="Login Image" style="max-width: 100%; height: auto;">
+          <img src="https://media.istockphoto.com/id/1281150061/vector/register-account-submit-access-login-password-username-internet-online-website-concept.jpg?s=612x612&w=0&k=20&c=9HWSuA9IaU4o-CK6fALBS5eaO1ubnsM08EOYwgbwGBo=" alt="Login Image" style="max-width: 100%; height: auto;">
       </div>
       <div style="flex: 1; text-align: center;">
-        <form style="width: 300px;">
-          <h2>Login</h2>
-          <p [class]="css_styling"  >{{description}}</p>
-          <div class="form-group">
-            <label for="username">Username</label>
-            <input (change)="getUsername($event)" type="text" id="username" class="form-control" placeholder="Enter username" required>
-          </div>
-          <div class="form-group">
-            <label for="password">Password</label>
-            <input type="password" id="password" class="form-control" placeholder="Enter password" required>
-          </div>
-          <div>
-            <button (click)="login()" type="submit" class="btn btn-primary">Login</button>
-          </div>
-        </form>
+          <form style="width: 300px;">
+              <h2>Login</h2>
+              <p [class]="css_styling">{{description}}</p>
+              <div class="form-group">
+                  <label for="username">Username</label>
+                  <input (input)="getUsername($event)" type="text" id="username" class="form-control" placeholder="Enter username" required>
+              </div>
+              <div class="form-group">
+                  <label for="password">Password</label>
+                  <input #passwordInput type="password" id="password" class="form-control" placeholder="Enter password" required>
+              </div>
+              <div>
+                  <button (click)="login(passwordInput.value)" type="button" class="btn btn-primary">Login</button>
+              </div>
+          </form>
       </div>
-    </div>
   </div>
-  
+</div>

@@ -6,13 +6,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
-  description:string="Please fill the form"
-  css_styling:string="fw-bolder text-danger"
-  getUsername(event:any){
-    console.log(event.target.value)
-  }
-  login(){
-    alert("Login Successful")
-  }
+   description: string = "please fill the form";
+   css_styling: string = "fw-bolder text-danger";
+   username: string = "";
 
+   getUsername(event: any){
+      console.log(event.target.value);
+      this.username = event.target.value;
+   }
+
+   login(password: string) {
+      console.log(password);
+      alert(`username: ${this.username}, password: ${password}`);
+   }
 }
