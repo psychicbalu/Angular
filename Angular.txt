@@ -12,3 +12,4 @@ Basic Concepts
 
 - Module     - To hold Components
 - Components - Part UI (Combination of TS file,HTML,CSS,Root Component,App Component)
+llll
