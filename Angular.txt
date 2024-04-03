@@ -1,0 +1,14 @@
+Basic Commands
+--------------------
+
+
+- To create Project    : ng new projectname
+- To Run               : ng serve --open
+- To Create Components : ng g c component name
+
+
+Basic Concepts
+------------------
+
+- Module     - To hold Components
+- Components - Part UI (Combination of TS file,HTML,CSS,Root Component,App Component)
